@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+    --color-primary: limegreen;
+    --color-secondary: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(135deg, #C8D7EE, #C8D7EE, #FFF, #FFF, #FFF);
+}
+
+/*---------------- Navbar ----------------*/
+
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.navbar-links a:active {
+    color: var(--color-primary);
+}
+
+.navbar-links a:visited {
+    color: #464646;
+}
+
+/*---------------- Hero ----------------*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    padding: 60px 30px;
+}
+
+.name {
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 10px;
+    font-weight: 100;
+
+    /* Animation */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; 
+}
+
+.name span {
+    font-weight: 900;
+    text-shadow: 0 -10px 1px #bbb;
+}
+
+.profession {
+    font-size: 20px;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+
+    /* Animation */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1s; 
+}
+
+.tagline {
+    font-size: 16px;
+
+    /* Animation */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 2s;    
+}
+
+.hero-buttons{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    /* Animation */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 3s;
+}
+
+.btn-hero {
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    background: transparent;
+}
+
+.btn-hero:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Keyframes for fade-in + slide-up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*---------------- About ----------------*/
+/* .about-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.highlight {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.skills-tags span {
+  background: #e0f2fe;
+  color: #3498db;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+*/
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-image {
+    order: -1;
+    margin-bottom: 30px;
+  }
+} */
+
+/*  */
+.about-section {
+    padding: 60px 30px;
+    color: #333;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.about-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about-section strong {
+  color: #222;
+  font-weight: 600;
+}
