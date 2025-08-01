@@ -1,7 +1,7 @@
 /*------------ Style for Hero section ------------*/
 
 .hero {
-  padding: 60px 30px;
+  padding: 60px 10px;
 }
 
 .hero-img {
@@ -94,5 +94,25 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     border: 1px solid red;
+  }
+}
+
+/* Medium screen */
+@media (min-width: 768px) {
+  .hero {
+    padding: 60px 100px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .profession {
+    font-size: 28px;
+  }
+
+  .tagline {
+    font-size: 20px;
+    max-width: 500px;
   }
 }
