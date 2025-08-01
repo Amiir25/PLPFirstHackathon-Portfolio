@@ -1,0 +1,19 @@
+/*------------ Style for About section ------------*/
+
+.about-section {
+  padding: 60px 30px;
+  color: #333;
+  margin: 0 auto;
+}
+
+.about-section p {
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.about-section strong {
+  color: #222;
+  font-weight: 600;
+}
