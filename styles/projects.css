@@ -90,3 +90,15 @@
     width: 500px;
   }
 }
+
+/* Medium screen */
+@media (min-width: 768px) {
+  .projects-section .section-title {
+    padding-left: 100px;
+    margin-bottom: 50px;
+  }
+
+  .project-card {
+    width: 600px;
+  }
+}
