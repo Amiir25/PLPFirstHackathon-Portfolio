@@ -17,3 +17,11 @@
   color: #222;
   font-weight: 600;
 }
+
+/*------------ Media Queries ------------*/
+/* Medium screen */
+@media (min-width: 768px) {
+  .about-section {
+    padding-left: 100px;
+  }
+}
