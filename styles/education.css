@@ -1,0 +1,126 @@
+/*------------ Style for Education section ------------*/
+
+.education-section {
+    padding: 80px 10px;
+    background: #f8fafd;
+}
+
+.education-section .section-title {
+    font-size: 28px;
+    padding: 0 20px;    
+}
+
+.timeline {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 34%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-primary);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-date {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 600;
+    color: #023e66;
+}
+
+.timeline-content {
+    flex: 2;
+    padding-left: 10px;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.timeline-content h4 {
+    margin: 5px 0 10px;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Timeline Dots */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 34%;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 8px rgba(52, 152, 219, 0.3); /* Outer glow */
+    transition: all 0.6s ease;
+}
+
+/* Download CV Button */
+.cta-cv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-cv {
+    text-decoration: none;
+    color: black;
+    border: 1px solid var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-cv:active {
+    background: var(--color-primary);
+    color: white;
+}
+
+.note-cv {
+    font-size: 14px;
+    padding: 0 20px;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+.timeline-item:hover::before {
+  background: #ff4e3a; /* Color change on hover */
+  box-shadow: 0 0 0 8px rgba(253, 25, 0, 0.3); /* Glow expands */
+  transform: translateX(-50%) scale(1.2); /* Slight scale-up */
+}
+
+/* Pulsing Animation (Optional) */
+/* @keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(52, 152, 219, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0); }
+} */
+
+/* Apply pulse to all dots or just the current one */
+.timeline-item::before {
+  animation: pulse 2s infinite; /*Remove if too distracting*/
+}
