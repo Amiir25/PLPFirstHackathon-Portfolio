@@ -67,6 +67,7 @@
   background: var(--color-primary);
 }
 
+/* Copyright */
 .copyright {
   text-align: center;
   margin-top: 50px;
@@ -78,4 +79,23 @@
 
 .copyright a {
   color: white;
+}
+
+/*------------ Media Queries ------------*/
+
+/* Medium screen */
+@media (min-width: 768px) {
+  .footer {
+    padding-left: 100px;
+  }
+
+  .footer-newsletter input {
+    padding: 20px 10px;
+  }
+
+  .footer-newsletter button {
+    width: 30%;
+    padding: 20px;
+    font-size: 18px;
+  }
 }
