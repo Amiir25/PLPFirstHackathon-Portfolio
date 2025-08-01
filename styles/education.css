@@ -124,3 +124,13 @@
 .timeline-item::before {
   animation: pulse 2s infinite; /*Remove if too distracting*/
 }
+
+/*------------ Media Queries ------------*/
+
+/* Medium screen */
+@media (min-width: 768px) {
+    .education-section .section-title {
+        padding-left: 100px;
+        margin-bottom: 50px;
+    }
+}
