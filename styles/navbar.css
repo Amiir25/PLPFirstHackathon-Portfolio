@@ -46,6 +46,7 @@ nav {
 
 /* Medium screen */
 @media (min-width: 768px) {
+  
   nav {
     padding: 10px 16px;
   }
