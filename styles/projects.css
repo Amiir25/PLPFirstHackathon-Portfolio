@@ -1,7 +1,7 @@
 /*------------ Style for Interests section ------------*/
 
 .projects-section {
-  padding: 80px 30px;
+  padding: 80px 24px;
   background: #f8fafd;
 }
 
@@ -93,12 +93,25 @@
 
 /* Medium screen */
 @media (min-width: 768px) {
+  .projects-section {
+    padding: 60px 64px;
+  }
   .projects-section .section-title {
-    padding-left: 100px;
     margin-bottom: 50px;
   }
 
   .project-card {
     width: 600px;
+  }
+}
+
+/* Large screen */
+@media (min-width: 992px) {
+  .projects-section {
+    padding: 60px 92px;
+  }
+
+  .project-card {
+    width: 700px;
   }
 }
