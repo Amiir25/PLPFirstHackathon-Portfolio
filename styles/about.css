@@ -1,7 +1,7 @@
 /*------------ Style for About section ------------*/
 
 .about-section {
-  padding: 60px 30px;
+  padding: 60px 24px;
   color: #333;
   margin: 0 auto;
 }
@@ -22,10 +22,28 @@
 /* Medium screen */
 @media (min-width: 768px) {
   .about-section {
-    padding-left: 100px;
+    padding: 0 64px;
   }
 
   .about-section p {
     font-size: 16px;
+  }
+}
+
+/* Large screen */
+@media (min-width: 992px) {
+  .about-section {
+    padding: 60px 92px;
+  }
+
+  .about-main-text {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 20px;
+  }
+
+  .about-main-text p {
+    flex: 1;
   }
 }
