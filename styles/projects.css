@@ -115,3 +115,10 @@
     width: 700px;
   }
 }
+
+/* Extra-large screen */
+@media (min-width: 992px) {
+  .projects-section {
+    padding: 60px 140px;
+  }
+}
