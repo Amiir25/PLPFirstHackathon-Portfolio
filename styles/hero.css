@@ -1,7 +1,7 @@
 /*------------ Style for Hero section ------------*/
 
 .hero {
-  padding: 60px 30px;
+  padding: 60px 24px;
 }
 
 .hero-img {
@@ -81,26 +81,31 @@
 }
 
 /*------------ Media Queries ------------*/
-/* Small screen */
-@media (min-width: 576px) {
-
-  .hero-im {
-    flex: 1;
-    display: block;
-    width: 30px;
-    background: url(../assets/img/hi.png);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid red;
-  }
-}
 
 /* Medium screen */
 @media (min-width: 768px) {
+  
+  header {
+    height: 100vh;
+    position: relative;
+  }
+
   .hero {
-    padding: 60px 100px;
+    padding: 60px 64px;
+  }
+
+  .hero-img {
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: -80px;
+    width: 60%;
+    background: url(../assets/img/hi-4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 80vh;
   }
 
   .name {
@@ -113,6 +118,48 @@
 
   .tagline {
     font-size: 20px;
-    max-width: 500px;
+    max-width: 450px;
   }
 }
+
+/* Large screen */
+@media (min-width: 992px) {
+
+
+  .hero {
+    padding: 60px 96px;
+  }
+
+  .hero-img {
+    right: 10px;
+    width: 80%;
+    background: url(../assets/img/hi-3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 80vh;
+  }
+
+  .name {
+    font-size: 75px;
+  }
+
+  .profession {
+    font-size: 30px;
+  }
+
+  .tagline {
+    font-size: 24px;
+  }
+
+  .hero-buttons {
+    margin: 40px 0;
+    gap: 40px;
+  }
+
+  .btn-hero {
+    font-size: 20px;
+  }
+
+  }
