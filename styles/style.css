@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --color-primary: limegreen;
+  --color-secondary: #aaa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(135deg, #C8D7EE, #C8D7EE, #FFF, #FFF, #FFF);
+}
+
+/* Common styles */
+.section-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+/*------------ Media Queries ------------*/
+
+/* Large screen */
+@media (min-width: 992px) {
+  header {
+    background: linear-gradient(155deg, #C8D7EE, #C8D7EE, #FFF, #FFF, #FFF);
+  }
+}
