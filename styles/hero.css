@@ -165,11 +165,11 @@
 /* Extra-large screen */
 @media (min-width: 1200px) {
   .hero {
-    padding: 60px 128px;
+    padding: 60px 140px;
   }
 
   .hero-img {
-    /* right: -50%; */
+    /* right: -10%; */
     width: 80%;
     background: url(../assets/img/hi-3.png);
     background-size: contain;
