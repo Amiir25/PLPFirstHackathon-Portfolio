@@ -53,20 +53,12 @@ nav {
     padding: 10px 64px;
   }
 
-  .logo {
-    width: 120px;
-  }
-
   .navbar-links a {
     font-size: 16px;
   }
 
-  .navbar-links a:hover {
-    color: var(--color-primary);
-  }
-
   .navbar-links a:active {
-    color: limegreen;
+    opacity: 0.5;
   }
 }
 
@@ -76,11 +68,23 @@ nav {
     padding: 20px 96px;
   }
 
-  .logo {
-    width: 140px;
-  }
-
   .navbar-links a {
     font-size: 20px;
   }
+
+  .navbar-links a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Extra-large screen */
+@media (min-width: 1200px) {
+  nav {
+    padding: 20px 140px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
 }
