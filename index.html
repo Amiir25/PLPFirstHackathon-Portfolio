@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/education.css">
+    <link rel="stylesheet" href="./styles/interests.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
 
     <!-- Header seciton (Navbar & Hero) -->
-    <header>
+    <header id="home">
         <!------------- Navbar ------------->
         <nav>
 
@@ -26,45 +33,53 @@
             <!-- Navigation Links -->
             <div class="navbar-links">
                 <a href="#about">About</a>
-                <a href="#services">Education</a>
-                <a href="#projects">Interests</a>
-                <a href="#testimonials">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#interests">Interests</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
 
         </nav>
 
         <!------------- Hero section ------------->
-        <div>
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="hero-content">
-                    <h1 class="name">Hi, I'm <br> <span>Amir Sadik</span> </h1>
-                    <h2 class="profession">Web Developer</h2>
-                    <p class="tagline">Crafting seamless web experiences with clean code & innovation</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn-hero">My Projects</a>
-                        <a class="btn-hero">My Resume</a>
-                    </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="name">Hi, I'm <br> <span>Amir Sadik</span> </h1>
+                <h2 class="profession">Web Developer</h2>
+                <p class="tagline">Crafting seamless web experiences with clean code & innovation</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-hero">My Projects</a>
+                    <a class="btn-hero">My Resume</a>
                 </div>
-            </section>
-        </div>
+            </div>
+            <!-- Hero image -->
+            <div class="hero-img"></div>
+        </section>
     </header>
 
     <!------------- About section ------------->
     <section id="about" class="about-section">
+
         <h2 class="section-title">About Me</h2>
-        <p>
-            &nbsp; I'm a passionate <strong>self-taught Web Developer</strong> with a strong foundation in programming,
-            particularly in <strong>C</strong> and <strong>Python</strong>. I specialize in building <strong>responsive,
-                user-friendly websites</strong> using <strong>HTML</strong>, <strong>CSS</strong>,
-            <strong>JavaScript</strong>, <strong>Bootstrap</strong>, and <strong>Tailwind CSS</strong>.
-        </p>
-        <p>
-            &nbsp; Lately, I’ve been diving deeper into <strong>full-stack development</strong>, working with tools like
-            <strong>React</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong>.
-            I love turning ideas into real, working applications that solve problems and provide great user experiences.
-        </p>
+
+        <div class="about-main-text">
+            <p>
+                &nbsp; I'm a passionate <strong>self-taught Web Developer</strong> with a strong foundation in
+                programming,
+                particularly in <strong>C</strong> and <strong>Python</strong>. I specialize in building
+                <strong>responsive,
+                    user-friendly websites</strong> using <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>JavaScript</strong>, <strong>Bootstrap</strong>, and <strong>Tailwind CSS</strong>.
+            </p>
+            <p>
+                &nbsp; Lately, I’ve been diving deeper into <strong>full-stack development</strong>, working with tools
+                like
+                <strong>React</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, and
+                <strong>MongoDB</strong>.
+                I love turning ideas into real, working applications that solve problems and provide great user
+                experiences.
+            </p>
+        </div>
         <p>
             &nbsp; Feel free to check out my portfolio and <strong>reach out</strong> if you'd like to work together —
             I'd love to connect!
@@ -174,35 +189,41 @@
         <div class="projects-list">
             <!-- Project 1: AppWorks -->
             <div class="project-card">
+                <!-- Desktop image -->
                 <img src="./assets/img/app-works-desktop.webp" alt="AppWorks Desktop Image" class="desktop-img">
-                <img src="./assets/img/app-works-mobile.webp" alt="AppWorks Mobile Image" class="mobile-img">
 
                 <div class="project-content">
-                    <h3>AppWorks</h3>
-                    <p>
-                        A clean, single-page landing site for AppWorks — a tech company providing business-focused
-                        technology solutions. Highlights include a hero message, service overview, client
-                        testimonials, and more.
-                    </p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                    <div class="project-content-container">
+                        <h3>AppWorks</h3>
+                        <p>
+                            A clean, single-page landing site for AppWorks — a tech company providing business-focused
+                            technology solutions. Highlights include a hero message, service overview, client
+                            testimonials, and more.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn">Code</a>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="btn">Live Demo</a>
-                        <a href="#" class="btn">Code</a>
-                    </div>
+
+                    <!-- Mobile image -->
+                    <img src="./assets/img/app-works-mobile.webp" alt="AppWorks Mobile Image" class="mobile-img">
+
                 </div>
             </div>
 
             <!-- Project 1: eventER -->
             <div class="project-card">
+                <!-- Desktop image -->
                 <img src="./assets/img/eventER-desktop.webp" alt="eventER Desktop Image" class="desktop-img">
-                <img src="./assets/img/eventER-mobile.webp" alt="eventER Mobile Image" class="mobile-img">
 
                 <div class="project-content">
-                    <div>
+                    <div class="project-content-container">
                         <h3>eventER</h3>
                         <p>
                             A dynamic, fully responsive event booking site that lets users explore and book from a
@@ -219,8 +240,17 @@
                             <a href="#" class="btn">Code</a>
                         </div>
                     </div>
+                    <!-- Mobile image -->
+                    <img src="./assets/img/eventER-mobile.webp" alt="eventER Mobile Image" class="mobile-img">
+
                 </div>
             </div>
+        </div>
+
+        <!-- Projects cta -->
+        <div class="projects-cta">
+            <p>More projects coming up!</p>
+            <a href="path/to/cv.pdf" download>Check my GitHub</a>
         </div>
     </section>
 
@@ -261,15 +291,15 @@
                     <h4>For Quick response</h4>
                     <div class="quick-reponse">
                         <i class="fa-regular fa-envelope"></i>
-                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        <a href="mailto:your.email@example.com">amirsadik636@gmail.com</a>
                     </div>
                     <div class="quick-reponse">
                         <i class="fa-solid fa-mobile-screen-button"></i>
-                        <a href="tel:+1234567890">+123 456 7890</a>
+                        <a href="tel:+1234567890">+251 944 081 246</a>
                     </div>
                     <div class="quick-reponse">
                         <i class="fa-solid fa-paper-plane"></i>
-                        <a href="tel:+1234567890">+123 456 7890</a>
+                        <a href="tel:+1234567890">https://t.me/amir_sadik</a>
                     </div>
                 </div>
 
@@ -287,25 +317,25 @@
         <div class="footer-content">
             <!-- Footer about -->
             <div class="footer-about">
-                <img src="./assets/img/logo.PNG" alt="">
+
+                <!-- Logo -->
+                <img src="./assets/img/logo-Picsart-BackgroundRemover.PNG" alt="">
+
                 <p>
                     Web developer passionate about creating innovative solutions and bringing ideas to life
                     through clean code and creative thinking.
                 </p>
 
-                <div class="footer-social">
-                    <h3>Connect</h3>
-                    <div class="social-icons">
-                        <a href="https://github.com/yourusername" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/yourusername" target="_blank">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://twitter.com/yourusername" target="_blank">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </div>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/yourusername" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
                 </div>
             </div>
 
@@ -316,19 +346,16 @@
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#education">Education</a>
-                    <a href="#education">Interests</a>
-                    <a href="#education">Projects</a>
+                    <a href="#interests">Interests</a>
+                    <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
 
-            <!-- Social Media (Repeated from Contact) -->
-
-
-            <!-- Newsletter (Optional) -->
-            <div class="footer-newsletter">
+            <!-- Newsletter -->
+            <div class="newsletter">
                 <h3>Stay Updated</h3>
-                <form>
+                <form class="newsletter-form">
                     <input type="email" placeholder="Your Email">
                     <button type="submit">Subscribe</button>
                 </form>
