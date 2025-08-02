@@ -84,7 +84,7 @@
 
 /* Medium screen */
 @media (min-width: 768px) {
-  
+
   header {
     height: 100vh;
     position: relative;
@@ -97,7 +97,7 @@
   .hero-img {
     display: block;
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: -80px;
     width: 60%;
     background: url(../assets/img/hi-4.png);
@@ -124,8 +124,6 @@
 
 /* Large screen */
 @media (min-width: 992px) {
-
-
   .hero {
     padding: 60px 96px;
   }
@@ -162,4 +160,22 @@
     font-size: 20px;
   }
 
+}
+
+/* Extra-large screen */
+@media (min-width: 1200px) {
+  .hero {
+    padding: 60px 128px;
   }
+
+  .hero-img {
+    /* right: -50%; */
+    width: 80%;
+    background: url(../assets/img/hi-3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+}
