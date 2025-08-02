@@ -1,5 +1,9 @@
 /*------------ Style for Interests section ------------*/
 
+:root {
+  --color-primary: limegreen;
+}
+
 .interests-section {
   padding: 80px 24px;
   background: #ffffff;
@@ -20,11 +24,6 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.interest-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 .interest-icon {
   font-size: 35px;
   margin-bottom: 15px;
@@ -35,43 +34,50 @@
 /* Full-Stack */
 .interests-list div:nth-child(1) i {
   color: rgb(253, 118, 103);
-  background-color: rgba(253, 118, 103, 0.2);;
+  background-color: rgba(253, 118, 103, 0.2);
+  ;
 }
 
 /* AI & Automation */
 .interests-list div:nth-child(2) i {
   color: rgb(253, 103, 233);
-  background-color: rgba(253, 103, 233, 0.2);;
+  background-color: rgba(253, 103, 233, 0.2);
+  ;
 }
 
 /* Open Source */
 .interests-list div:nth-child(3) i {
   color: rgb(180, 103, 253);
-  background-color: rgba(180, 103, 253, 0.2);;
+  background-color: rgba(180, 103, 253, 0.2);
+  ;
 }
 
 /* Cybersecurity */
 .interests-list div:nth-child(4) i {
   color: rgb(192, 0, 0);
-  background-color: rgba(192, 0, 0, 0.2);;
+  background-color: rgba(192, 0, 0, 0.2);
+  ;
 }
 
 /* Mobile-dev */
 .interests-list div:nth-child(5) i {
   color: rgb(253, 145, 103);
-  background-color: rgba(253, 145, 103, 0.2);;
+  background-color: rgba(253, 145, 103, 0.2);
+  ;
 }
 
 /* Tech Trends */
 .interests-list div:nth-child(6) i {
   color: rgb(253, 103, 215);
-  background-color: rgba(253, 103, 215, 0.2);;
+  background-color: rgba(253, 103, 215, 0.2);
+  ;
 }
 
 /* Continuous Learning */
 .interests-list div:nth-child(7) i {
   color: rgb(118, 103, 253);
-  background-color: rgba(118, 103, 253, 0.2);;
+  background-color: rgba(118, 103, 253, 0.2);
+  ;
 }
 
 .interest-card h3 {
@@ -92,7 +98,20 @@
   .interests-section {
     padding: 60px 92px;
   }
+
   .interests-list {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--color-primary)
+  }
+}
+
+/* Extra-large */
+@media (min-width: 1200px) {
+  .interests-section {
+    padding: 60px 140px;
   }
 }
