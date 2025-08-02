@@ -32,6 +32,8 @@ nav {
   color: #464646;
 }
 
+/*------------ Media Queries ------------*/
+
 /* Small screen */
 @media (min-width: 576px) {
   nav {
