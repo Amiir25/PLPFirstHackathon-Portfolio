@@ -47,3 +47,21 @@
     flex: 1;
   }
 }
+
+/* Extra-large screen */
+@media (min-width: 1200px) {
+  .about-section {
+    padding: 60px 140px;
+  }
+
+  .about-main-text  {
+    justify-content: center;
+  }
+  .about-main-text p {
+    max-width: 400px;
+  }
+
+  .about-section > p {
+    text-align: center;
+  }
+}
