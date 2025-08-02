@@ -60,4 +60,27 @@ nav {
   .navbar-links a {
     font-size: 16px;
   }
+
+  .navbar-links a:hover {
+    color: var(--color-primary);
+  }
+
+  .navbar-links a:active {
+    color: limegreen;
+  }
+}
+
+/* Large screen */
+@media (min-width: 992px) {
+  nav {
+    padding: 20px 32px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .navbar-links a {
+    font-size: 20px;
+  }
 }
