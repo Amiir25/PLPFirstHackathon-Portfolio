@@ -85,7 +85,7 @@
 /* Download CV Button */
 .cta-cv {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .btn-cv {
@@ -114,14 +114,13 @@
     transform: translateX(-50%) scale(1.2);
 }
 
-/* Pulsing Animation (Optional) */
+/* Pulsing Animation */
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(52, 219, 116, 0.7); }
   70% { box-shadow: 0 0 0 10px rgba(52, 152, 219, 0); }
   100% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0); }
 }
 
-/* Apply pulse to all dots or just the current one */
 .timeline-item::before {
     animation: pulse 2s infinite;
 }
