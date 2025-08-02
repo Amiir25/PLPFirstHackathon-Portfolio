@@ -1,7 +1,7 @@
 /*------------ Style for Interests section ------------*/
 
 .interests-section {
-  padding: 80px 20px;
+  padding: 80px 24px;
   background: #ffffff;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .interest-card {
-  background: #e3edfd;
+  background: #f1f4f8;
   border-radius: 10px;
   padding: 25px;
   border: 1px solid #eee;
@@ -83,4 +83,16 @@
   color: #7f8c8d;
   line-height: 1.5;
   font-size: 14px;
+}
+
+/*------------ Media Queries ------------*/
+
+/* Large screen */
+@media (min-width: 992px) {
+  .interests-section {
+    padding: 60px 92px;
+  }
+  .interests-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 }
