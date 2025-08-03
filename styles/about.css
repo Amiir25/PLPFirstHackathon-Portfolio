@@ -18,6 +18,14 @@
   font-weight: 600;
 }
 
+.ethiopia {
+  color: inherit;
+}
+
+.ethiopia:active {
+  color: limegreen;
+}
+
 /*------------ Media Queries ------------*/
 /* Medium screen */
 @media (min-width: 768px) {
@@ -46,6 +54,14 @@
   .about-main-text p {
     flex: 1;
   }
+
+  .ethiopia:hover {
+    color: limegreen;
+  }
+
+  .ethiopia:active {
+    opacity: 0.8;
+  }
 }
 
 /* Extra-large screen */
@@ -54,14 +70,15 @@
     padding: 60px 140px;
   }
 
-  .about-main-text  {
+  .about-main-text {
     justify-content: center;
   }
+
   .about-main-text p {
     max-width: 400px;
   }
 
-  .about-section > p {
+  .about-section>p {
     text-align: center;
   }
 }
