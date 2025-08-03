@@ -44,9 +44,13 @@
     padding: 60px 92px;
   }
 
+  .about-section p {
+    font-size: 20px;
+  }
+
   .about-main-text {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 60px;
     margin-bottom: 20px;
   }
