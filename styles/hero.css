@@ -103,11 +103,10 @@
     top: 80px;
     right: -80px;
     width: 60%;
-    background: url(../assets/img/hi-4.png);
+    background: url(../assets/img/hi-img-2.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     height: 80vh;
   }
 
@@ -134,7 +133,7 @@
   .hero-img {
     right: 10px;
     width: 80%;
-    background: url(../assets/img/hi-3.png);
+    background: url(../assets/img/hi-img-1.webp);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
