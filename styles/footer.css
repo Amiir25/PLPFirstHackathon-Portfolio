@@ -122,4 +122,20 @@
   .footer-content {
     justify-content: space-around;
   }
+
+  .footer-social-icons a:hover {
+    color: var(--color-primary);
+  }
+  
+  .footer-social-icons a:active {
+    opacity: 0.8;
+  }
+  
+  .newsletter-form button:hover {
+    background: var(--color-primary);
+  }
+  
+  .newsletter-form button:active {
+    opacity: 0.8;
+  }
 }
