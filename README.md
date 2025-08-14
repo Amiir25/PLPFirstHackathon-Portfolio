@@ -19,6 +19,6 @@ You can see the website here: [Demo](https://portfolio-for-plp-hack-1.netlify.ap
 - GitHub Pages (for hosting)  
 
 ## How to Use
-1. **Clone the repo** (if you want to edit):  
+**Clone the repo** (if you want to edit):  
    ```bash
    https://github.com/Amiir25/PLPHackathon1-Portfolio.git
